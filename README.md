@@ -3,7 +3,7 @@
 ## Endpoints
 ### Get customer's info by id
 GET /customers/:id
-`curl http://rs/1lhost:8080/customer`
+`curl http://localhost:8080/customers/1`
 
 ### Add customer
 POST /customers
