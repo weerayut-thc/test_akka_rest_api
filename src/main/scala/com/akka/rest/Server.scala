@@ -63,8 +63,6 @@ object Server {
             if (wasStopped) ctx.self ! Stop
             running(binding)
           case Stop =>
-            // we got a stop message but haven't completed starting yet,
-            // we cannot stop until starting has completed
             starting(wasStopped = true)
         }
 
